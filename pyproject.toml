@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "notam-alerts"
+version = "0.1.0"
+description = "Alerts on changes in NOTAM"
+authors = ["Avishay Bar <avishay.il@gmail.com>"]
+readme = "README.md"
+packages = []
+
+[tool.poetry.dependencies]
+python = ">=3.11.0, <4.0"
+requests = "*"
+playwright = "*"
+pytz = "*"
+
+[tool.poetry.group.dev.dependencies]
+black = "==24.2.0"
+isort = "==5.11.5"
+flake8 = "==7.0.0"
+yamllint = "*"
+pre-commit = "*"
+pytest = "*"
+pytest-cov = "*"
+requests-mock = "*"
+python-dotenv = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
